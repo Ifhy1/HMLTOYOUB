@@ -122,6 +122,36 @@
     right: 0;
     bottom: 202px;
 }
+
+/* Media query for mobile alignment */
+@media only screen and (max-width: 640px)
+{
+  .card {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin: 0;
+    -webkit-perspective: none;
+    perspective: none;
+    transition: 1s;
+  }
+  .inside {
+    padding: 20px;
+  }
+  .outside {
+    transform-origin: top;
+    cursor: auto;
+  }
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    width: 100%;
+    margin: 0;
+  }
+  .candle {
+    bottom: 0;
+  }
+}
 .candle:before {
     content: "";
     position: absolute;
